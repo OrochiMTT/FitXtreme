@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitXtreme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fit<span class="highlight">X</span>treme</div>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="resultat.html">Résultats</a>
+                <a href="formation.html">Formation</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="background">
+            <div class="content">
+                <!-- Titre principal -->
+                <h2 class="main-title">
+                    <span class="highlight-text">Rejoignez ma formation fitness pour seulement 39,95 CHF !</span>
+                </h2>
+                
+                <!-- Description avec avantages -->
+                <p class="description">
+                    <strong>Transformez votre vie dès aujourd'hui avec mon programme complet conçu pour débutant. Profitez d'un suivi régulier qui vous guidera pas à pas vers vos objectifs.</strong>
+                </p>
+                
+                <ul class="benefits">
+                    <li><strong>✅ Accès à des séances d’entraînement variées et adaptées.</strong></li>
+                    <li><strong>✅ Conseils en nutrition pour optimiser vos résultats.</strong></li>
+                    <li><strong>✅ Une communauté motivante pour vous soutenir.</strong></li>
+                    <li><strong>✅ Des outils et ressources exclusifs pour suivre vos progrès.</strong></li>
+                </ul>
+                
+                <!-- Bouton d'inscription centré, redirige vers Instagram -->
+                <div class="payment-button">
+                    <a href="https://www.instagram.com/1963_.dany/" class="btn" target="_blank">Commencer</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FitXtreme. Tous droits réservés.</p>
+        <p><a href="/mentions-legales">Mentions légales</a> | <a href="/contact">Contact</a></p>
+    </footer>
+
+    <style>
+        /* Général */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* En-tête */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+            padding-left: 30px;
+        }
+
+        .highlight {
+            color: #3498db;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* Contenu principal */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: calc(100vh - 120px);
+            padding: 0 30px;
+        }
+
+        .background {
+            max-width: 800px;
+            text-align: left;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6); /* Fond légèrement transparent pour contraste */
+            padding: 30px;  /* Augmenté pour plus de hauteur */
+            border-radius: 10px;
+            margin-top: -50px;  /* Remonter légèrement */
+            min-height: 600px;  /* Augmenté pour plus d'espace */
+        }
+
+        /* Titre principal */
+        .main-title {
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .highlight-text {
+            color: #3498db;
+        }
+
+        /* Description du programme */
+        .description {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        .benefits li {
+            margin: 8px 0;
+        }
+
+        /* Bouton d'inscription */
+        .payment-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .payment-button .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 30px 60px;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .payment-button .btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>
+

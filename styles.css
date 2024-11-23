@@ -1,0 +1,246 @@
+/* Animations rapides et efficaces */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Fond noir très foncé */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilisation de la pleine hauteur de l'écran */
+    animation: fadeIn 0.6s ease-out; /* Animation d'apparition rapide pour le body */
+}
+
+/* En-tête */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    animation: slideInFromTop 0.6s ease-out; /* Animation d'entrée rapide du header */
+}
+
+/* Logo (FitXtreme) */
+.logo {
+    font-size: 3.5em; /* Augmenter la taille du titre "FitXtreme" */
+    font-weight: bold;
+    color: #fff;
+    padding-left: 40px; /* Espacement à gauche */
+    animation: fadeIn 0.8s ease-out; /* Animation rapide pour le logo */
+}
+
+/* Cible la lettre X dans le logo */
+.highlight {
+    color: orange;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 1.5em;
+    animation: slideInFromBottom 0.7s ease-out; /* Animation fluide pour la navigation */
+}
+
+/* Liens de navigation */
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Survol - Accueil */
+.nav-links a:nth-child(1):hover {
+    background-color: #333;
+    border-radius: 5px;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    color: #ffd700; /* Jaune pour "Accueil" */
+}
+
+/* Survol - Résultats */
+.nav-links a:nth-child(2):hover {
+    background-color: #333;
+    border-radius: 5px;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    color: #28a745; /* Vert pour "Résultats" */
+}
+
+/* Survol - Formation */
+.nav-links a:nth-child(3):hover {
+    background-color: #333;
+    border-radius: 5px;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    color: #007bff; /* Bleu pour "Formation" */
+}
+
+/* Contenu principal */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start; /* Aligne le texte à gauche */
+    align-items: center; /* Centre verticalement */
+    background-image: url('https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: left; /* Texte aligné à gauche */
+    height: calc(100vh - 120px); /* Occupe l'espace restant entre header et footer */
+    padding-left: 40px; /* Un peu d'espace à gauche */
+    padding-right: 40px; /* Un peu d'espace à droite pour éviter que le texte touche les bords */
+    animation: slideInFromBottom 0.8s ease-out; /* Apparition rapide et fluide du contenu */
+}
+
+/* Titre principal */
+h1 {
+    font-size: 6.5em;
+    line-height: 1.1;
+    margin: 0;
+    max-width: 70%;
+    word-wrap: break-word;
+    text-align: left;
+    margin-top: -500px;
+    animation: fadeIn 1s ease-out; /* Apparition fluide du titre */
+}
+
+/* Image Screenshot spécifique */
+.screenshot {
+    width: 280px; /* Taille réduite */
+    height: auto; /* Proportion respectée */
+    position: absolute;
+    right: 300px; /* Position à droite */
+    top: 60%; /* Centrage vertical */
+    transform: translateY(-50%); /* Ajustement centré verticalement */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    /* Pas d'animation touchant l'image .screenshot */
+}
+
+/* Global styles for footer */
+.footer {
+    background-color: #222;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    color: #f39c12;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p, 
+.footer-column ul {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links li a {
+    color: #f39c12;
+    font-size: 18px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    font-size: 14px;
+}
